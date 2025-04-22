@@ -14,6 +14,15 @@ public class LibraryMember {
     private String kodeReferal;
     private boolean langgananBuletin;
 
+   
+    // sebelum refactoring
+    public LibraryMember(String namaLengkap, String alamat, String nomorTelepon, String email, String jenisKelamin,
+    String kodeAnggota, Date tanggalGabung, boolean statusAktif,
+    String tingkatKeanggotaan, int jumlahBukuDipinjam, int jumlahTerlambat, int jumlahDenda,
+    int poinLoyalitas, String kodeReferal, boolean langgananBuletin) {
+    //
+}
+    // sesudah refactoring 
     public LibraryMember(ProfilAnggota profil, String kodeAnggota, Date tanggalGabung,
                          boolean statusAktif, TingkatKeanggotaan tingkatKeanggotaan,
                          int jumlahBukuDipinjam, int jumlahTerlambat, int jumlahDenda,
