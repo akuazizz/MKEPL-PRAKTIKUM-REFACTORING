@@ -39,7 +39,13 @@ public class LibraryMember {
         this.kodeReferal = kodeReferal;
         this.langgananBuletin = langgananBuletin;
     }
-
+    // sebelum refactoring
+    public void cetakProfilLengkap() {
+        System.out.println("Nama: " + namaLengkap);
+        // dan seterusnya...
+    }    
+    
+    // sesudah refactoring
     public void cetakProfilLengkap() {
         System.out.println("===== PROFIL ANGGOTA =====");
         System.out.println("Nama         : " + profil.getNamaLengkap());
